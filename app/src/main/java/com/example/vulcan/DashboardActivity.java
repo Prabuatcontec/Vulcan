@@ -31,13 +31,14 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     private DrawerLayout drawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("Dashboard", "123");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(DashboardActivity.this);
         drawer = findViewById(R.id.drawer_layout);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar
@@ -53,6 +54,11 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             case R.id.sDetail:
                 Intent i = new Intent(getApplicationContext(), ScanSerail.class);
                 startActivity(i);
+                finish();
+                break;
+            case R.id.sDetrash:
+                Intent ids = new Intent(getApplicationContext(), MainActivity1.class);
+                startActivity(ids);
                 finish();
                 break;
             case R.id.logout:

@@ -1,5 +1,6 @@
 package com.example.vulcan;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -51,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 new LoginUser().execute(Username, Password);
             }
         });
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
     }
 

@@ -6,9 +6,9 @@
         <item android:id="@+id/sDetail"
             android:icon="@drawable/vulcan"
             android:title="Serial Scan" />
-        <item android:id="@+id/sHistory"
+        <item android:id="@+id/sDetrash"
             android:icon="@drawable/vulcan"
-            android:title="Serial History" />
+            android:title="Detrash" />
     </group>
     <item android:title="Serial">
         <menu>
