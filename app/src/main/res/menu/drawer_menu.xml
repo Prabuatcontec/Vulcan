@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/sDetail"
+            android:icon="@drawable/vulcan"
+            android:title="Serial Scan" />
+        <item android:id="@+id/sHistory"
+            android:icon="@drawable/vulcan"
+            android:title="Serial History" />
+    </group>
+    <item android:title="Serial">
+        <menu>
+            <item android:id="@+id/serial"
+                android:icon="@drawable/vulcan"
+                android:title="Serial" />
+            <item android:id="@+id/serials"
+                android:icon="@drawable/vulcan"
+                android:title="Serials" />
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <item android:id="@+id/logout"
+                android:icon="@drawable/vulcan"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
