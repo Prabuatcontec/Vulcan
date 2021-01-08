@@ -7,7 +7,7 @@
     <FrameLayout
         android:id="@+id/fm_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="96dp"
         android:layout_margin="4dp"
         android:layout_weight=".6"
         android:background="@color/blue"
@@ -19,26 +19,6 @@
         android:layout_margin="4dp"
         android:layout_weight=".4"
         android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Scan in Fragment" />
-
-        <Button
-            android:id="@+id/btn_activity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Scan in activity for result" />
-
-        <TextView
-            android:id="@+id/tv_result_head"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_result"

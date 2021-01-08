@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ScanSerail">
 
+    <include layout="@layout/activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></include>
+
 
 <com.budiyev.android.codescanner.CodeScannerView
     android:id="@+id/scanner_view"

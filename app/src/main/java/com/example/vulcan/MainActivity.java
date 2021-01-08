@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                  String Username = etUsername.getText().toString();
                  String Password = etPassword.getText().toString();
-                Log.d("check","Prabu");
+
                 new LoginUser().execute(Username, Password);
             }
         });

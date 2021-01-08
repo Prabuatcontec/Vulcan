@@ -13,10 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vulcan"
         android:usesCleartextTraffic="${usesCleartextTraffic}">
-        <activity android:name=".Detrash"></activity>
-        <activity android:name=".BarcodeReaderActivity"></activity>
-
-
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".Detrash" />
+        <activity android:name=".BarcodeReaderActivity" />
         <activity
             android:name=".SerialDetail"
             android:parentActivityName=".DashboardActivity" />
@@ -26,7 +25,8 @@
         <activity
             android:name=".ScanSerail"
             android:logo="@drawable/vulcan"
-            android:parentActivityName=".SerialDetail" />
+            android:parentActivityName=".SerialDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
