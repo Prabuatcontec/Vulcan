@@ -3,27 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/sDetail"
-            android:icon="@drawable/vulcan"
+        <item
+            android:id="@+id/sDetail"
+            android:icon="@drawable/ic_code_scanner_auto_focus_on"
             android:title="Serial Scan" />
-        <item android:id="@+id/sDetrash"
-            android:icon="@drawable/vulcan"
+        <item
+            android:id="@+id/sDetrash"
+            android:icon="@drawable/ic_code_scanner_flash_on"
             android:title="Detrash" />
     </group>
-    <item android:title="Serial">
+    <item android:title="Inventory">
         <menu>
-            <item android:id="@+id/serial"
-                android:icon="@drawable/vulcan"
-                android:title="Serial" />
-            <item android:id="@+id/serials"
-                android:icon="@drawable/vulcan"
-                android:title="Serials" />
+            <item
+                android:id="@+id/serial"
+                android:icon="@android:drawable/stat_sys_download"
+                android:title="Pallets" />
+            <item
+                android:id="@+id/serials"
+                android:icon="?attr/actionModeCloseDrawable"
+                android:title="Close UNit" />
         </menu>
     </item>
     <item android:title="Profile">
         <menu>
-            <item android:id="@+id/logout"
-                android:icon="@drawable/vulcan"
+            <item
+                android:id="@+id/logout"
+                android:icon="@android:drawable/ic_dialog_alert"
                 android:title="Logout" />
         </menu>
     </item>
