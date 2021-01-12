@@ -21,16 +21,21 @@ import com.example.vulcan.BarcodeReaderFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class MainActivity1 extends AppCompatActivity implements View.OnClickListener, BarcodeReaderFragment.BarcodeReaderListener {
     private static final int BARCODE_READER_ACTIVITY_REQUEST = 1208;
     private TextView mTvResult;
     private TextView mTvResultHeader;
-    HashMap<Integer, String> serials = new HashMap<Integer, String>();
-    TreeMap<Integer, String> sorted = new TreeMap<>();
+    Map<Integer, String> serials = new HashMap<Integer, String>();
+    Map<Integer, String> sorted = new TreeMap<Integer, String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,14 +109,15 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
 
         if(serials.containsValue(barcode.rawValue.replaceAll("[-+^]*", "")) == false)
         {
-            serials.put(barcode.cornerPoints[0].x, barcode.rawValue.replaceAll("[-+^]*", "")
+            serials.put(barcode.cornerPoints[0].y, barcode.rawValue.replaceAll("[-+^]*", "")
             );
-            Log.d("Barcode", serials.toString().replace(",",","));
+            Log.d("Barcode123", serials.toString().replace(",",","));
+
         }
-        sorted.putAll(serials);
-        //Toast.makeText(this, barcode.rawValue, Toast.LENGTH_SHORT).show();
-        //mTvResultHeader.setText("Barcode value from fragment");
-        mTvResult.setText(serials.toString().replace(",",","));
+
+        Map<Integer, String> treeMap = new TreeMap<Integer, String>(serials);
+
+        mTvResult.setText(treeMap.toString().replace(",",","));
     }
 
 
