@@ -23,5 +23,6 @@
     <string name="barcode_error">"Error reading barcode: %1$s"</string>
     <string name="grant">GRANT</string>
     <string name="cancel">CANCEL</string>
+    <string name="txt_message">Text</string>
 </resources>
 

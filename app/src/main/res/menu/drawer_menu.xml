@@ -11,6 +11,10 @@
             android:id="@+id/sDetrash"
             android:icon="@drawable/ic_code_scanner_flash_on"
             android:title="Detrash" />
+        <item
+            android:id="@+id/textReader"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="Text Reader" />
     </group>
     <item android:title="Inventory">
         <menu>

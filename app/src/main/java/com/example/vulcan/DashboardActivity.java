@@ -110,6 +110,11 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 startActivity(ids);
                 finish();
                 break;
+            case R.id.textReader:
+                Intent textReader = new Intent(getApplicationContext(), OCRActivity2.class);
+                startActivity(textReader);
+                finish();
+                break;
             case R.id.logout:
                 SharedPreferences preferences = getSharedPreferences("myPrefs", MODE_PRIVATE);
                 preferences.edit().putString("token", "").commit();
