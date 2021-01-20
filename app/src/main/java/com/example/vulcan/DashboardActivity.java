@@ -115,6 +115,11 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 startActivity(textReader);
                 finish();
                 break;
+            case R.id.imageReader:
+                Intent imageReader = new Intent(getApplicationContext(), ImageTextActivity2.class);
+                startActivity(imageReader);
+                finish();
+                break;
             case R.id.logout:
                 SharedPreferences preferences = getSharedPreferences("myPrefs", MODE_PRIVATE);
                 preferences.edit().putString("token", "").commit();

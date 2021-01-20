@@ -15,6 +15,10 @@
             android:id="@+id/textReader"
             android:icon="?android:attr/actionModeFindDrawable"
             android:title="Text Reader" />
+        <item
+            android:id="@+id/imageReader"
+            android:icon="@android:drawable/ic_menu_report_image"
+            android:title="Image Reader" />
     </group>
     <item android:title="Inventory">
         <menu>
