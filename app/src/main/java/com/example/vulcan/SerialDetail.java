@@ -43,6 +43,17 @@ public class SerialDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_serial_detail);
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.my_awesome_toolbar);
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         Intent intent = getIntent();
         String sn = intent.getExtras().getString("sn");

@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".ImageTextActivity2">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/abc_vector_test" />
 
 <!--    <ImageView-->
 <!--        android:id="@+id/imageView3Read"-->
@@ -21,7 +29,8 @@
         android:layout_height="280dp"
         android:contentDescription="CaptureImage"
         android:onClick="imageClick"
-        android:src="@drawable/ggg" />
+        android:src="@drawable/ggg"
+        android:layout_margin="2dp"/>
 
     <TextView
         android:id="@+id/textViewContent"

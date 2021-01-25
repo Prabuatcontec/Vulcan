@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import android.util.Log;
 import android.util.SparseArray;
+import android.view.View;
 
 import com.google.android.gms.vision.barcode.Barcode;
 
@@ -28,6 +29,18 @@ public class BarcodeReaderActivity extends AppCompatActivity implements BarcodeR
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barcode_reader);
+
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.my_awesome_toolbar);
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         final Intent intent = getIntent();
         if (intent != null) {

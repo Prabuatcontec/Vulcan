@@ -9,7 +9,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/vulcan" />
 
     <EditText
@@ -19,7 +19,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="150dp"
         android:hint="Username"/>
 
     <EditText
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="220dp"
         android:hint="Password"
         android:inputType="textPassword" />
 
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/bluebutton"
         android:text="Button" />
 </RelativeLayout>
